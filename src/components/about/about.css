@@ -72,8 +72,15 @@
   color: var(--color-light);
 }
 
-.about__content-text {
+.about__content-textContainer {
   margin: 2rem 0 2.6rem;
+  background: var(--color-primary-variant);
+  border-radius: 2rem;
+  padding: 1.5rem;
+  /* display: block; */
+}
+
+.about__content-text {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -144,5 +151,13 @@
 
   .about__content-btn {
     justify-content: center;
+  }
+
+  .about__content-text {
+    padding: 0 1rem;
+  }
+
+  #about {
+    margin-top: 1.5rem;
   }
 }

@@ -40,24 +40,23 @@ const About = () => {
             </article>
           </div>
 
-          <div className="about__content-text">
-            <p>
-              Hello, I'm Saboor Ahmad Bhat! A dedicated hotel management student
-              with a passion for delivering exceptional guest experiences.
-            </p>
-            <p>
-              Throughout my studies, I've developed a deep understanding of
-              hospitality operations, customer service, and event planning.
-            </p>
-            <p>
-              My goal is to make every guest's stay memorable, combining my love
-              for the industry with a commitment to excellence.
-            </p>
-            <p>
-              When I'm not immersed in hotel management, you'll find me
-              exploring new cuisines and cultures, and pursuing my love for
-              photography.
-            </p>
+          <div className="about__content-textContainer">
+            <div className="about__content-text">
+              <p>
+                Hello, I'm Saboor Ahmad Bhat! A dedicated hotel management
+                student with a passion for delivering exceptional guest
+                experiences. Throughout my studies, I've developed a deep
+                understanding of hospitality operations, customer service, and
+                event planning.
+              </p>
+
+              <p>
+                My goal is to make every guest's stay memorable, combining my
+                love for the industry with a commitment to excellence. When I'm
+                not immersed in hotel management, you'll find me exploring new
+                cuisines and cultures, and pursuing my love for photography.
+              </p>
+            </div>
           </div>
 
           <div className="about__content-btn">

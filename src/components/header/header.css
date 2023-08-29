@@ -40,11 +40,12 @@ header {
 .me {
   background: linear-gradient(var(--color-primary), transparent);
   /* height: 30rem; */
-  width: 23rem;
+  width: 30vw;
   position: absolute;
   /* left: 50%;
   transform: translateX(-50%); */
-  left: calc(50% - 11rem);
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 4rem;
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
@@ -88,6 +89,7 @@ header {
   .me {
     margin-top: 4rem;
     padding: 3rem 1rem 1rem 1rem;
+    width: 50vw;
   }
 
   .cta {
@@ -103,11 +105,12 @@ header {
   }
 
   .me {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    width: 80vw;
   }
 
   .cta {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   .header__container h1 {
