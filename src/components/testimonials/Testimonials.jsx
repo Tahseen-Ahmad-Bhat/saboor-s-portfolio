@@ -1,8 +1,5 @@
 import React from "react";
 import "./testimonials.css";
-import Avt1 from "../../assets/Profile.jpeg";
-import Avt2 from "../../assets/zakir2.jpg";
-import Avt3 from "../../assets/towseef.jpg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -17,19 +14,22 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 const data = [
   {
-    avatar: Avt1,
+    avatar:
+      "https://res.cloudinary.com/dukwfcwcm/image/upload/v1693297322/Profile_ukf9n4.jpg",
     name: "Tahseen Ahmad Bhat",
     review:
       "Working with Mr. Saboor Bhat was a delight. Their attention to detail and commitment to providing exceptional guest experiences set them apart. I look forward to future collaborations.",
   },
   {
-    avatar: Avt2,
+    avatar:
+      "https://res.cloudinary.com/dukwfcwcm/image/upload/v1693297342/zakir2_i7jg82.jpg",
     name: "Zakir Ahmad Sofi",
     review:
       "I had the pleasure of collaborating with Mr. Saboor Bhat on a hospitality seminar. His organizational skills and dedication ensured the event's success. I highly recommend his expertise.",
   },
   {
-    avatar: Avt3,
+    avatar:
+      "https://res.cloudinary.com/dukwfcwcm/image/upload/v1693297334/towseef_v374b1.jpg",
     name: "Dr Towseef",
     review:
       "Mr. Saboor Bhat made my stay unforgettable. From the warm welcome at the front desk to the personalized service throughout my visit, he truly knows how to exceed expectations.",
