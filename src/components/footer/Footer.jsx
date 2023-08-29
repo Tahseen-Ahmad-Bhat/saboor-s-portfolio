@@ -56,6 +56,17 @@ const Footer = () => {
       <div className="footer__copyright">
         <p>&copy; Saboor Ahmad Bhat. All rights reserved.</p>
       </div>
+
+      <div className="designed__by">
+        <p>Designed and Developed by</p>
+        <a
+          href="https://www.linkedin.com/in/tahseen-ahmad-bhat-b77204246/"
+          target="_blank"
+          className="btn"
+        >
+          Tahseen Ahmad Bhat
+        </a>
+      </div>
     </footer>
   );
 };

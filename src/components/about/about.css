@@ -74,10 +74,11 @@
 
 .about__content-textContainer {
   margin: 2rem 0 2.6rem;
-  background: var(--color-primary-variant);
+  background: var(--color-bg);
   border-radius: 2rem;
   padding: 1.5rem;
   /* display: block; */
+  border: 1px solid var(--color-primary);
 }
 
 .about__content-text {
@@ -92,6 +93,11 @@
   color: var(--color-light);
 }
 
+.about__content-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
 /* ================= MEDIA QUERIES (MY DEVICE) ============ */
 @media screen and (max-width: 1300px) {
   .about__card {
@@ -103,8 +109,7 @@
   }
 
   .about__content-btn {
-    display: flex;
-    justify-content: flex-end;
+    /* justify-content: center; */
   }
 
   #about {
@@ -158,6 +163,6 @@
   }
 
   #about {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
   }
 }

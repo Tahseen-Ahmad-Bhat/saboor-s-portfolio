@@ -44,8 +44,17 @@ footer {
 }
 
 .footer__copyright {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   color: var(--color-primary);
+}
+
+.designed__by {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
 /* ================= MEDIA QUERIES (MY DEVICE) ============ */
@@ -65,5 +74,9 @@ footer {
 
   .footer__socials {
     margin-bottom: 2.5rem;
+  }
+
+  .designed__by {
+    flex-direction: column;
   }
 }

@@ -1,11 +1,8 @@
 import React from "react";
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
-import { FiDribbble } from "react-icons/fi";
 
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
-import { IoLogoTwitter } from "react-icons/io";
 
 const HeaderSocials = () => {
   return (
