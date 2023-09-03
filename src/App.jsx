@@ -9,6 +9,10 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
+// TostContainer
+
+import NotificationContainer from "./util/Notification";
+
 const App = () => {
   return (
     <div className="app">
@@ -23,6 +27,8 @@ const App = () => {
         <Contact />
         <Footer />
       </>
+
+      <NotificationContainer />
     </div>
   );
 };

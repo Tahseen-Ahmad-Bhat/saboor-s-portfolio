@@ -1,23 +1,58 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiSmartphone } from "react-icons/fi";
 import { BsWhatsapp } from "react-icons/bs";
+import { ImSpinner2 } from "react-icons/im";
 
 import emailjs from "@emailjs/browser";
+import { notify } from "../../util/Notification";
+import {
+  validateEmail,
+  validateMessage,
+  validateName,
+} from "../../util/validation";
 
 const Contact = () => {
+  const [isDisabled, setIsDisabled] = useState(false);
+
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const validateForm = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
+    setIsDisabled(true);
+
+    const { name, email, message } = e.target;
+
+    // Validating Name
+    if (!validateName(name.value)) {
+      setIsDisabled(false);
+      return notify("error", "Please enter your name!");
+    }
+    // Validating Email
+    if (!validateEmail(email.value)) {
+      setIsDisabled(false);
+      return notify("error", "Please enter your email!");
+    }
+    // Validating Message
+    if (!validateMessage(message.value)) {
+      setIsDisabled(false);
+      return notify("error", "Please enter your message!");
+    }
+    sendEmail(e);
+  };
+
+  const sendEmail = async (e) => {
+    const res = await emailjs.sendForm(
       "service_c6b1w02",
       "template_dyleirj",
       form.current,
       "Kdui_wTgPZx5EjXpi"
     );
+
+    if (res.status === 200) notify("success", "Message sent successfully! 🥳");
+    setIsDisabled(false);
 
     e.target.reset();
   };
@@ -49,22 +84,20 @@ const Contact = () => {
           </article>
         </div>
 
-        <form ref={form} onSubmit={sendEmail}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Full Name"
-            required
-          />
-          <input type="text" name="email" placeholder="Your Email" required />
+        <form ref={form} onSubmit={validateForm}>
+          <input type="text" name="name" placeholder="Your Full Name" />
+          <input type="text" name="email" placeholder="Your Email" />
           <textarea
             name="message"
             rows="7"
             placeholder="Your Message"
-            required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
-            Send Message
+          <button
+            type="submit"
+            className="btn btn-primary"
+            disabled={isDisabled}
+          >
+            {!isDisabled ? "Send Message" : <ImSpinner2 className="spinner" />}
           </button>
         </form>
       </div>
