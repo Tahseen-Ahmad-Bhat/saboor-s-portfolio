@@ -60,6 +60,7 @@ const NotificationContainer = () => {
   return (
     <>
       <ToastContainer
+        className="notification__container"
         theme="colored"
         position="top-center"
         autoClose={2000}
