@@ -9,6 +9,7 @@
 .developerModal {
   color: var(--color-light);
   background-color: var(--color-bg-variant);
+  opacity: 1;
 
   /* z-index: 4; */
   width: 60vw;
@@ -46,8 +47,8 @@
 @media screen and (max-width: 600px) {
   .developerModal {
     border-radius: 1rem;
-    top: 5rem;
-    width: 75vw;
+    top: 4rem;
+    width: 85vw;
     gap: 1.5rem;
   }
 
@@ -56,7 +57,7 @@
   }
 
   .developerModal > p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .developerModal__icon {
