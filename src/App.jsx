@@ -12,6 +12,7 @@ import Footer from "./components/footer/Footer";
 // TostContainer
 
 import NotificationContainer from "./util/Notification";
+import Overlay from "./components/modal/Overlay";
 
 const App = () => {
   return (
@@ -29,6 +30,8 @@ const App = () => {
       </>
 
       <NotificationContainer />
+
+      <Overlay />
     </div>
   );
 };

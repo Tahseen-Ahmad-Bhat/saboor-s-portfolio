@@ -1,0 +1,68 @@
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  text-align: center;
+}
+
+.developerModal {
+  color: var(--color-light);
+  background-color: var(--color-bg-variant);
+
+  /* z-index: 4; */
+  width: 60vw;
+  height: max-content;
+  /* margin: 10vh 20vw; */
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+
+  top: 3rem;
+  border-radius: 3rem;
+  padding: 2rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.developerModal > img {
+  width: 150px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.developerModal__icon {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 600px) {
+  .developerModal {
+    border-radius: 1rem;
+    top: 5rem;
+    width: 75vw;
+    gap: 1.5rem;
+  }
+
+  .developerModal > img {
+    width: 100px;
+  }
+
+  .developerModal > p {
+    font-size: 0.8rem;
+  }
+
+  .developerModal__icon {
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

@@ -41,6 +41,10 @@ body {
 }
 
 /* =================== GENERAL STYLES =============== */
+.app {
+  position: relative;
+}
+
 .container {
   width: var(--container-width-lg);
   margin: 0 auto;
@@ -151,7 +155,7 @@ img {
 
   /* CSS of toast-notification for mobile devices  */
   .Toastify__toast-container {
-    max-width: 70vw;
+    max-width: 80vw;
     min-width: fit-content;
     top: 3rem;
     left: 50%;
