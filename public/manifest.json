@@ -2,15 +2,15 @@
   "name": "Portfolio",
   "short_name": "SB",
   "theme_color": "#000000",
-  "background_color": "#000000",
+  "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
   "id": "/",
   "icons": [
     {
-      "src": "maskable.png",
-      "sizes": "192x192",
+      "src": "maskable2.png",
+      "sizes": "384x384",
       "type": "image/png",
       "purpose": "any maskable"
     },
