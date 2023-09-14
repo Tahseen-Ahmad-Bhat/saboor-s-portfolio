@@ -62,6 +62,11 @@ textarea {
   font-size: 1.1rem;
 }
 
+form > button {
+  min-width: 18vw;
+  height: 3rem;
+}
+
 .spinner {
   font-size: 1.3rem;
   animation: rotate-animation 1s infinite linear;
@@ -93,5 +98,11 @@ textarea {
 @media screen and (max-width: 600px) {
   .container.contact__container {
     width: var(--container-width-sm);
+  }
+
+  form > button {
+    min-width: 30vw;
+
+    margin: 0 auto;
   }
 }
