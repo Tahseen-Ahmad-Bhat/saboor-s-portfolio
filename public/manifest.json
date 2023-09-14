@@ -1,6 +1,6 @@
 {
-  "name": "Portfolio",
-  "short_name": "SB",
+  "name": "Saboor's Portfolio",
+  "short_name": "Saboor's Portfolio",
   "theme_color": "#000000",
   "background_color": "#2c2c6c",
   "display": "standalone",
@@ -9,7 +9,7 @@
   "id": "/",
   "icons": [
     {
-      "src": "maskable2.png",
+      "src": "maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
