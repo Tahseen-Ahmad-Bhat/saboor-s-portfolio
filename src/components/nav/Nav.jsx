@@ -4,8 +4,10 @@ import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 
-const Nav = () => {
+const Nav = ({ displayNav }) => {
   const [activeNav, setActiveNav] = useState("#");
+
+  if (!displayNav) return null;
 
   return (
     <nav>

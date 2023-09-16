@@ -31,3 +31,16 @@ nav a.active {
   background: var(--color-primary-variant);
   color: var(--color-white);
 }
+
+/* Media query for responsive design */
+@media screen and (max-width: 600px) {
+  nav {
+    left: 0;
+    transform: none;
+    bottom: 0;
+    width: 100vw;
+    border-radius: 0rem;
+    justify-content: space-around;
+    background-color: black;
+  }
+}
