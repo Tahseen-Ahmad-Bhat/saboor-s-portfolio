@@ -1,8 +1,8 @@
 {
   "name": "Saboor's Portfolio",
   "short_name": "Saboor's Portfolio",
-  "theme_color": "#000000",
-  "background_color": "#2c2c6c",
+  "theme_color": "#2c2c6c",
+  "background_color": "#000000",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
