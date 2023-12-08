@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import profile from "../../assets/profile.jpg";
 
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
@@ -14,10 +15,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img
-              src="https://res.cloudinary.com/dukwfcwcm/image/upload/v1693298116/Saboor3_b4doi7.jpg"
-              alt="About Image"
-            />
+            <img src={profile} alt="About Image" />
           </div>
         </div>
 
